@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.title-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 35px 0px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.card{
+    width: 32%;
+    background-color: white;
+}
+
+.info-card{
+    text-align: center;
+    padding: 20px 0px;
+}
