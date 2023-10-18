@@ -33,12 +33,22 @@ const infoTeam = [
 ]
 console.log("ciao")
 
+// Stampare su console e poi su DOM, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+
+let imgCardDOMElement = document.querySelector(".img-card")
+let nameDOMElement = document.querySelector(".name")
+let roleDOMElement = document.querySelector(".role");
+
+console.log(nameDOMElement)
 
 
 for (let i = 0; i < infoTeam.length; i++){
-    const currentInfo = infoTeam[i];
-
-    console.log(currentInfo.nome);
+    let currentInfo = infoTeam[i];
+    imgCardDOMElement.innerHTML = currentInfo.foto
+    nameDOMElement.innerHTML = currentInfo.nome
+    roleDOMElement.innerHTML = currentInfo.ruolo
+    console.log(roleDOMElement)
+    // console.log(currentInfo.nome + ": " + currentInfo.ruolo + ", " + currentInfo.foto);
 }
 
 
